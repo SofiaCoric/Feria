@@ -38,7 +38,7 @@ header {
   background-color: var(--amarillo);
   padding: 1em;
   position: fixed;
-  top: 0;
+  top: -1em;
   left: 0;
   width: 89%;
   z-index: 1000;
@@ -252,6 +252,10 @@ h2 {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
+}
+
+.contenido-sobre-imagen2 {
+  display: none;
 }
 
 .contenido-sobre-imagen p {
@@ -594,6 +598,19 @@ footer p {
   .contenido-sobre-imagen {
     width: 90%;
   }
+
+  .contenido-sobre-imagen2 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
 
   #grid img:nth-of-type(3) {
     grid-row: span 2;
